@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}TeLoVendo - Clientes{% endblock %}
+
+    {% block body %}  
+    <h1 class="titulo">Registro de Proveedores</h1>
+    <div class="form-group">
+        <form action="" method="post">{% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Regístrate" class="btn btn-primary">
+        </form>
+    </div>
+    {% endblock %}

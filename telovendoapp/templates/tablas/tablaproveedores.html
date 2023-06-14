@@ -1,0 +1,26 @@
+<table class="table table-striped-columns">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Rut</th>
+            <th scope="col">Direccion</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for proveedor in proveedores %}
+        <tr>
+            <th scope="row">{{ proveedor.id }}</th>
+            <td>{{ proveedor.nombre }}</td>
+            <td>{{ proveedor.rut }}</td>
+            <td>{{ proveedor.direccion }}</td>
+            <td>{{ proveedor.telefono }}</td>
+            <td>{{ proveedor.email }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
